@@ -398,8 +398,93 @@ function init3DBackground() {
     animate();
 }
 
+// Add mobile navigation styles to the head
+document.head.insertAdjacentHTML('beforeend', `
+<style>
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+    z-index: 1000;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle span::before {
+    content: '';
+    top: -8px;
+}
+
+.nav-toggle span::after {
+    content: '';
+    top: 8px;
+}
+
+.nav-toggle.active span {
+    background-color: transparent;
+}
+
+.nav-toggle.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle.active span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: rgba(20, 20, 20, 0.95);
+        padding-top: 60px;
+        transition: 0.3s ease;
+        z-index: 999;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+}
+</style>
+`);
+
 // Add mobile navigation toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
+    const navigation = document.querySelector('.navigation');
+    
     // Create nav toggle button if it doesn't exist
     if (!document.querySelector('.nav-toggle')) {
         const navToggle = document.createElement('div');
@@ -410,17 +495,27 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle navigation on click
         navToggle.addEventListener('click', function() {
             this.classList.toggle('active');
-            document.querySelector('.navigation').classList.toggle('active');
+            navigation.classList.toggle('active');
         });
         
         // Close navigation when clicking on a nav item on mobile
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('click', function() {
                 if (window.innerWidth <= 768) {
-                    document.querySelector('.nav-toggle').classList.remove('active');
-                    document.querySelector('.navigation').classList.remove('active');
+                    navToggle.classList.remove('active');
+                    navigation.classList.remove('active');
                 }
             });
+        });
+
+        // Close navigation when clicking outside
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768 && 
+                !navigation.contains(e.target) && 
+                !navToggle.contains(e.target)) {
+                navToggle.classList.remove('active');
+                navigation.classList.remove('active');
+            }
         });
     }
 });
