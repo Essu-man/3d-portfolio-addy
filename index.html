@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-logo">
+                <span>Portfolio</span>
+            </div>
+            <div class="nav-items">
+                <div class="nav-item active" data-screen="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item" data-screen="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </div>
+                <div class="nav-item" data-screen="projects">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </div>
+                <div class="nav-item" data-screen="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </div>
+                <div class="nav-item" data-screen="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main content container -->
+        <div id="app-container" class="app-container">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="screens/home.js"></script>
+    <script src="screens/about.js"></script>
+    <script src="screens/projects.js"></script>
+    <script src="screens/skills.js"></script>
+    <script src="screens/contact.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
