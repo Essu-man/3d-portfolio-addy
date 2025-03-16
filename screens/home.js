@@ -11,7 +11,7 @@ function loadHomeScreen(container) {
     // Add animated title
     const title = document.createElement('h1');
     title.className = 'animated-title';
-    title.textContent = 'John Doe';
+    title.textContent = 'Addy Isaac Asare';
     
     // Add animated subtitle with typing effect
     const subtitle = document.createElement('h2');
