@@ -38,10 +38,6 @@ function loadAboutScreen(container) {
         <div class="image-container">
             <div class="slider-container">
                 <img src="./assets/images/isaac.jpg" alt="Profile" class="profile-image active">
-                <img src="./assets/images/isaac2.jpg" alt="Profile" class="profile-image">
-                <img src="./assets/images/isaac3.jpg" alt="Profile" class="profile-image">
-                <img src="./assets/images/isaac4.jpg" alt="Profile" class="profile-image">
-                <img src="./assets/images/isaac5.jpg" alt="Profile" class="profile-image">
             </div>
             <div class="image-overlay"></div>
             <div class="slider-dots"></div>
