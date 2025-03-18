@@ -12,7 +12,6 @@ function loadProjectsScreen(container) {
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web</button>
                 <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="design">Design</button>
             </div>
             
             <div class="projects-grid">
@@ -46,12 +45,12 @@ function loadProjectsScreen(container) {
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Fitness Tracker App</h3>
-                        <p class="project-description">Mobile application for tracking workouts and nutrition</p>
+                        <h3 class="project-title"> Farm management App</h3>
+                        <p class="project-description">Mobile application ........ and </p>
                         <div class="project-tech">
                             <span class="tech-tag">React Native</span>
                             <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Expo</span>
                         </div>
                     </div>
                 </div>
