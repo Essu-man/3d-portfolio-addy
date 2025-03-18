@@ -16,7 +16,7 @@ function loadContactScreen(container) {
                         </div>
                         <div class="info-details">
                             <h3>Location</h3>
-                            <p>San Francisco, CA</p>
+                            <p>Accra, Ghana</p>
                         </div>
                     </div>
                     
@@ -26,7 +26,7 @@ function loadContactScreen(container) {
                         </div>
                         <div class="info-details">
                             <h3>Email</h3>
-                            <p>hello@example.com</p>
+                            <p>caessuman3@gmail.com</p>
                         </div>
                     </div>
                     
@@ -36,7 +36,7 @@ function loadContactScreen(container) {
                         </div>
                         <div class="info-details">
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+233 209189872</p>
                         </div>
                     </div>
                     
