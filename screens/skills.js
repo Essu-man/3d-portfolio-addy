@@ -12,12 +12,12 @@ function loadSkillsScreen(container) {
                 <div class="skills-category">
                     <h2 class="category-title"><i class="fas fa-code"></i> Frontend Development</h2>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="Typescript">
+                        <div class="skill-item" data-skill="HTML/CSS">
                             <div class="skill-icon"><i class="fab fa-html5"></i></div>
                             <div class="skill-info">
                                 <h3>HTML/CSS</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 0%;" data-percent="78"></div>
+                                    <div class="skill-progress" style="width: 0%;" data-percent="95"></div>
                                 </div>
                                 <span class="skill-percent">0%</span>
                             </div>
@@ -39,13 +39,13 @@ function loadSkillsScreen(container) {
                             <div class="skill-info">
                                 <h3>React</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 0%;" data-percent="92"></div>
+                                    <div class="skill-progress" style="width: 0%;" data-percent="85"></div>
                                 </div>
                                 <span class="skill-percent">0%</span>
                             </div>
                         </div>
                         
-                        <div class="skill-item" data-skill="Firebase">
+                        <div class="skill-item" data-skill="Vue.js">
                             <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
                             <div class="skill-info">
                                 <h3>Vue.js</h3>
@@ -88,18 +88,18 @@ function loadSkillsScreen(container) {
                             <div class="skill-info">
                                 <h3>MongoDB</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 0%;" data-percent="70"></div>
+                                    <div class="skill-progress" style="width: 0%;" data-percent="82"></div>
                                 </div>
                                 <span class="skill-percent">0%</span>
                             </div>
                         </div>
                         
-                        <div class="skill-item" data-skill="Clerk">
+                        <div class="skill-item" data-skill="SQL">
                             <div class="skill-icon"><i class="fas fa-table"></i></div>
                             <div class="skill-info">
                                 <h3>SQL</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 0%;" data-percent="88"></div>
+                                    <div class="skill-progress" style="width: 0%;" data-percent="78"></div>
                                 </div>
                                 <span class="skill-percent">0%</span>
                             </div>
@@ -120,12 +120,24 @@ function loadSkillsScreen(container) {
                                 <span class="skill-percent">0%</span>
                             </div>
                         </div>
+                        
+                        <div class="skill-item" data-skill="Adobe XD">
+                            <div class="skill-icon"><i class="fab fa-adobe"></i></div>
+                            <div class="skill-info">
+                                <h3>Adobe XD</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 0%;" data-percent="85"></div>
+                                </div>
+                                <span class="skill-percent">0%</span>
+                            </div>
+                        </div>
+                        
                         <div class="skill-item" data-skill="Git">
                             <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
                             <div class="skill-info">
                                 <h3>Git</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 0%;" data-percent="95"></div>
+                                    <div class="skill-progress" style="width: 0%;" data-percent="90"></div>
                                 </div>
                                 <span class="skill-percent">0%</span>
                             </div>
@@ -136,7 +148,7 @@ function loadSkillsScreen(container) {
                             <div class="skill-info">
                                 <h3>Docker</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 0%;" data-percent="40"></div>
+                                    <div class="skill-progress" style="width: 0%;" data-percent="70"></div>
                                 </div>
                                 <span class="skill-percent">0%</span>
                             </div>
@@ -148,9 +160,15 @@ function loadSkillsScreen(container) {
                     <h2 class="category-title"><i class="fas fa-plus-circle"></i> Other Skills</h2>
                     <div class="tags-container">
                         <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">WebGL</span>
                         <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Firebase</span>
                         <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">Jest</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">SASS</span>
                         <span class="skill-tag">Tailwind CSS</span>
                         <span class="skill-tag">UI/UX Design</span>
                     </div>
