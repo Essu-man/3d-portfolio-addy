@@ -11,7 +11,7 @@ function loadHomeScreen(container) {
     // Add animated title
     const title = document.createElement('h1');
     title.className = 'animated-title';
-    title.textContent = 'Addy Isaac Asare';
+    title.textContent = 'Constance Akua Essuman';
     
     // Add animated subtitle with typing effect
     const subtitle = document.createElement('h2');
@@ -36,10 +36,9 @@ function loadHomeScreen(container) {
     
     // Add stats items
     const statsData = [
-        { number: '5+', label: 'Years Experience' },
-        { number: '50+', label: 'Projects Completed' },
-        { number: '30+', label: 'Happy Clients' },
-        { number: '10+', label: 'Awards' }
+        { number: '2+', label: 'Years Experience' },
+        { number: '10+', label: 'Projects Completed' },
+        { number: '5+', label: 'Happy Clients' },
     ];
     
     statsData.forEach(stat => {
